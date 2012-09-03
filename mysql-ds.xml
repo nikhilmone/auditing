@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<datasources>
+        <local-tx-datasource>
+                <jndi-name>MySqlDSJndi</jndi-name>
+                <connection-url>jdbc:mysql://localhost:3306/testAuth</connection-url>
+                <driver-class>com.mysql.jdbc.Driver</driver-class>
+                <user-name>root</user-name>
+                <password>redhat</password>
+		<use-java-context>false</use-java-context>
+                <metadata>
+                       <type-mapping>mySQL</type-mapping>
+                </metadata>
+        </local-tx-datasource>
+</datasources>
+
