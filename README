@@ -122,20 +122,8 @@ NOTE: If you are facing any issue or authentication failure then please enable t
 
 
 
-How to achieve Audit logging for JBoss EAP admin console
-last modified by Musharraf Hussain on 05/09/12 - 15:20
-Issue
+Audit logging for JBoss EAP admin console :
 
-    What additional steps required in order to achieve the audit.log logging for the admin-console, so that user's login/logout informations can be captured in the audit.log ?
-
-Environment
-
-    JBoss Enterprise Application Platform
-        5.1.x
-    JBoss Enterprise SOA Platform
-        5.1.x
-
-Resolution
 
 JBoss admin-console is a Seam framework based appication which requires the following steps to enable it's audit logging in "audit.log" :
 
@@ -184,6 +172,4 @@ NOTE The public document [1] has mistakenly mentioned an incorrect JAVA_OPTS who
 The above JAVA_OPTS is incorrect because it has a missing character 's' in the 'parameters' , so the correct JAVA_OPTS is like the following:
 
  JAVA_OPTS="$JAVA_OPTS -Dorg.jboss.security.web.audit=headers,cookies,parameters"
-
-[1] http://docs.redhat.com/docs/en-US/JBoss_Enterprise_Application_Platform/5/html-single/Security_Guide/index.html#proc-Enable_Sec_Audit_Web
 
